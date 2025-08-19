@@ -182,3 +182,101 @@ body {
     font-style: italic;
     opacity: 0.9;
 }
+
+/* Tutorials section styles */
+.tutorials-section {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.tutorials-section h2 {
+    font-size: 24px;
+    font-weight: 350;
+    color:#071629;
+    margin-bottom: 40px;
+}
+
+.tutorials-section h2 .purple-text {
+    color: #C271FF;
+    font-weight: 700;
+}
+
+.tutorials-section > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorial-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    color: black;
+    text-align: left;
+}
+
+.tutorial-card > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tutorial-content {
+    padding: 20px;
+}
+
+.tutorial-content h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.tutorial-content > p {
+    color: rgba(7, 22, 41, 0.8);
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author h4 {
+    color: #C271FF;
+    font-size: 14px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 4px;
+}
+
+.star-rating i {
+    color: #C271FF;
+    font-size: 14px;
+}
+
+.star-duration-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.duration {
+    color: #C271FF;
+    font-size: 14px;
+    font-weight: bold;
+}
