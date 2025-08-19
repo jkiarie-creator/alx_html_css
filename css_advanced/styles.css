@@ -1,0 +1,148 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    background-color: #071629;
+}
+
+/* Header styles */
+.header, header {
+    position: absolute;
+    width: 100%;
+    padding: 2rem 9rem;
+    z-index: 2;
+}
+
+.nav, nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, nav img {
+    width: 167px;
+    height: 29px;
+}
+
+.nav-links, nav ul {
+    display: flex;
+    gap: 52px;
+    list-style: none;
+}
+
+.nav-link, nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Hero section styles */
+.hero-section, main section:first-child {
+    position: relative;
+    background: url('./CSS_Advanced/Object.png') ;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.hero-section::before, main section:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Hero content container */
+.hero-content, main section:first-child > div {
+    position: relative;
+    z-index: 1;
+}
+
+/* Get schooled heading */
+.hero-section h1, main section:first-child h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* SMILES GRIN LAUGH text */
+.hero-content span, main section:first-child div:first-child span {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 30px;
+    display: inline-block;
+}
+
+/* Register button */
+.register-btn, main section:first-child button {
+    background: #c63ce2;
+    border: none;
+    border-radius: 22px;
+    padding: 13px 28px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 45px;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(194, 113, 255, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Learn from the pros section */
+.pros-section, main section:first-child > div:last-child {
+    margin-top: 180px;
+}
+
+.pros-section h2, main section:first-child > div:last-child h2 {
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+.pros-section h2 span, main section:first-child > div:last-child h2 span {
+    color: #c63ce2;
+}
+
+/* Pros grid container */
+.pros-grid, main section:first-child > div:last-child > div {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Individual pro card */
+.pro-card, main section:first-child > div:last-child > div > div {
+    text-align: center;
+}
+
+.pro-card img, main section:first-child > div:last-child img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.pro-card h3, main section:first-child > div:last-child h3 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.pro-card p, main section:first-child > div:last-child p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.9);
+}
