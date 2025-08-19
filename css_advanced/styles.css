@@ -280,3 +280,68 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
+/* Membership section styles */
+.membership-section {
+    background: #071629;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.membership-section h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.membership-section h2 span {
+    color: #C271FF;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.membership-grid > div {
+    text-align: center;
+}
+
+.membership-grid img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.membership-grid h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.membership-grid p {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.membership-section button {
+    background: #C271FF;
+    border: none;
+    border-radius: 22px;
+    padding: 13px 28px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 70px;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(194, 113, 255, 0.5);
+}
+
+.membership-section button:hover {
+    opacity: 0.9;
+}
